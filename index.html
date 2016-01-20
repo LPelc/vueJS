@@ -2,14 +2,28 @@
 <html>
 <head>
 	<title>Projet VueJS</title>
-<script src="js/node_modules/vue/dist/vue.min.js"></script>
-
 </head>
 <body>
 <h1>QCM VueJS</h1>
-	<div id="example">
-	  {{ message }}
+
+
+	<div id="question">
+	<h2>Question</h2>
+	  Intitulé de la question <br>
+	  <textarea id="inputQuestion" name="name"></textarea><br>
 	</div>
+	<div id="reponse">
+	<h2>Réponses</h2>
+	Intitule de la réponse<br>
+	<textarea id="inputRep" name="name"></textarea>
+	<input id="validite" type="checkbox"/>
+	</div>
+	<div>
+		
+	<input id="bouton" type="submit"></input>
+	</div>
+
+<script src="js/node_modules/vue/dist/vue.min.js"></script>
 <script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
